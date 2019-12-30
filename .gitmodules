@@ -1,0 +1,6 @@
+[submodule "cncjs-kt-ext"]
+	path = cncjs-kt-ext
+	url = https://github.com/leoheck/cncjs-kt-ext
+[submodule "cncjs"]
+	path = cncjs
+	url = https://github.com/cncjs/cncjs.git
