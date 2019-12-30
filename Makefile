@@ -12,4 +12,3 @@ uninstall:
 	sudo rm -f cncjs-kt-ext.service
 	sudo systemctl disable cncjs.service
 	sudo systemctl disable cncjs-kt-ext.service
-
