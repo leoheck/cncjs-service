@@ -1,0 +1,14 @@
+[Unit]
+Description = CNCjs Autoleveler
+Wants = network-online.target cncjs.service
+After = network.target network-online.target cncjs.service
+
+[Service]
+User = pi
+ExecStart = /usr/local/bin/node /home/pi/cncjs-kt-ext/index.js --port /dev/ttyUSB0 --id="7e9d0aff-ef66-4907-8e42-c1c6cb034674" --name=lheck
+RemainAfterExit = no
+Restart = on-failure
+RestartSec = 5s
+
+[Install]
+WantedBy = default.target
