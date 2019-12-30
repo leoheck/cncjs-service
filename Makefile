@@ -1,8 +1,6 @@
-install_node:
-	sudo apt-get install -y gcc g++ make
+install_dependencies:
 	curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -
 	sudo apt install nodejs
-	sudo -H nvm install node
 
 install:
 	sudo cp -f cncjs.service /etc/systemd/system/
